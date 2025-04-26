@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 50: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        thatguy"
+File "game/script.rpy", line 68: choice menuitem expects a non-empty block.
+    "Choice 2":
+               ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sat Apr 12 10:01:22 2025
+Sat Apr 26 10:10:41 2025

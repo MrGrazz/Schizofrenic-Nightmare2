@@ -1,74 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {/rotat} in '{sc=1000}{rotat}####{/sc}{/rotat} what are you doing watching Tv we have things to do'.:
-  File "game/script.rpy", line 51, in script
-    thatguy"{sc=1000}{rotat}####{/sc}{/rotat} what are you doing watching Tv we have things to do"
-Exception: '/rotat' closes a text tag that isn't open.
+While running game code:
+  File "game/script.rpy", line 106, in script
+    Spooner"Well lets go to eat then"
+Exception: Sayer 'Spooner' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 51, in script
-    thatguy"{sc=1000}{rotat}####{/sc}{/rotat} what are you doing watching Tv we have things to do"
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
+  File "game/script.rpy", line 106, in script
+    Spooner"Well lets go to eat then"
+  File "C:\Users\Pcreathors\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
     Say.execute(self)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
-    display_say(who,
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\screen.py", line 755, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\layout.py", line 1457, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\text\text.py", line 2614, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\text\text.py", line 738, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\Pcreathors\Documents\rempy\renpy-8.3.6-sdk\renpy\text\text.py", line 1284, in segment
-    raise Exception("%r closes a text tag that isn't open." % text)
-Exception: '/rotat' closes a text tag that isn't open.
+  File "C:\Users\Pcreathors\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Pcreathors\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Spooner' is not defined.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.6.25022803
 Schizophrenian Dream 1.0
-Sat Apr 12 10:19:06 2025
+Sat Apr 26 10:21:14 2025
